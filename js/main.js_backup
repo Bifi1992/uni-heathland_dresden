@@ -1,0 +1,94 @@
+// ------------- VARIABLES ------------- //
+var ticking = false;
+var isFirefox = (/Firefox/i.test(navigator.userAgent));
+var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
+var scrollSensitivitySetting = 15; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
+var slideDurationSetting = 500; //Amount of time for which slide is "locked"
+var currentSlideNumber = 0;
+var totalSlideNumber = $(".background").length;
+
+// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
+function parallaxScroll(e) {
+  var e = window.event || e;
+  if (isFirefox) {
+    //Set delta for Firefox
+    delta = e.detail * (-120);
+  } else if (isIe) {
+    //Set delta for IE
+    delta = -e.deltaY;
+  } else {
+    //Set delta for all other browsers
+    delta = e.wheelDelta || -e.detail;
+  }
+  console.log(delta);
+
+  if (ticking != true) {
+    if (delta <= -scrollSensitivitySetting) {
+      //Down scroll
+      ticking = true;
+      console.log("log1");
+      if (currentSlideNumber !== totalSlideNumber - 1) {
+        console.log("log2" + currentSlideNumber);
+        currentSlideNumber++;
+        nextItem();
+      }
+      slideDurationTimeout(slideDurationSetting);
+    }
+    if (delta >= scrollSensitivitySetting) {
+      //Up scroll
+      ticking = true;
+      if (currentSlideNumber !== 0) {
+        currentSlideNumber--;
+      }
+      previousItem();
+      slideDurationTimeout(slideDurationSetting);
+    }
+  }
+}
+
+// ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
+function slideDurationTimeout(slideDuration) {
+  setTimeout(function() {
+    ticking = false;
+  }, slideDuration);
+}
+
+// ------------- ADD EVENT LISTENER ------------- //
+var scrollEvent = isFirefox ? "DOMMouseScroll" : "wheel";
+window.addEventListener(scrollEvent, throttle(parallaxScroll, 60), false);
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+}
+
+// ------------- SLIDE MOTION ------------- //
+function nextItem() {
+  var $previousSlide = $(".slide").eq(currentSlideNumber - 1);
+  console.log($previousSlide);
+  $previousSlide.removeClass("up-scroll").addClass("down-scroll");
+}
+
+function previousItem() {
+  var $currentSlide = $(".slide").eq(currentSlideNumber);
+  $currentSlide.removeClass("down-scroll").addClass("up-scroll");
+}
+
+// display countdown timer
+var displayCountdown = function() {
+  var clock =  $('.countdown').FlipClock(360024100,{
+    countdown: true,
+    autoStart: false,
+    clockFace: 'DailyCounter',
+    showSeconds: false,
+    minimumDigits: 3
+  });
+  clock.start();
+
+};
+displayCountdown();
