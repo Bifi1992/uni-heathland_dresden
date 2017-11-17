@@ -65,7 +65,10 @@ function previousItem() {
 }
 // display countdown timer
 var displayCountdown = function() {
-  var clock =  $('.countdown').FlipClock(15000000,{
+  // time until 12th May 2018
+  var endDate =  new Date("2018-05-12T12:00:00.000Z");
+  var seconds = (endDate.getTime() - new Date().getTime()) / 1000;
+  var clock =  $('.countdown').FlipClock(seconds,{
     countdown: true,
     autoStart: false,
     clockFace: 'DailyCounter',

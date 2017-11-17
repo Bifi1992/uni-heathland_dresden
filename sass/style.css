@@ -5,7 +5,6 @@ html, body {
   margin: 0; }
 
 .background {
-  background-color: #211812;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,7 +13,6 @@ html, body {
   backface-visibility: hidden;
   height: 130vh;
   position: fixed;
-  width: 100%;
   transform: translateY(30vh);
   transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1); }
   .background:before {
@@ -25,8 +23,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); }
+    bottom: 0; }
   .background:first-child {
     transform: translateY(-15vh); }
     .background:first-child .content-wrapper {
@@ -34,15 +31,18 @@ html, body {
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 4; }
+  z-index: 5; }
 
 .background:nth-child(2) {
-  z-index: 3; }
+  z-index: 4; }
 
 .background:nth-child(3) {
-  z-index: 2; }
+  z-index: 3; }
 
 .background:nth-child(4) {
+  z-index: 2; }
+
+.background:nth-child(5) {
   z-index: 1; }
 
 p {
@@ -94,5 +94,24 @@ p {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.container-navtree {
+  position: fixed;
+  right: 1vw;
+  bottom: 0;
+  z-index: 99;
+  width: 20%;
+  height: 50%;
+  background-image: url("../img/test_branch.png");
+  background-size: cover; }
+.container-pattern {
+  position: fixed;
+  left: 0;
+  top: -3vh;
+  z-index: 99;
+  width: 50%;
+  height: 50%;
+  background-image: url("../img/heathlandPattern.png");
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */
