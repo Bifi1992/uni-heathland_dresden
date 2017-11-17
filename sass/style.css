@@ -4,6 +4,9 @@ html, body {
   color: #D2DA77;
   margin: 0; }
 
+h1, h2, div {
+  color: #D2DA77; }
+
 .background {
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,9 +48,6 @@ html, body {
 .background:nth-child(5) {
   z-index: 1; }
 
-p {
-  color: #D2DA77; }
-
 .content-wrapper {
   height: 100vh;
   display: flex;
@@ -63,11 +63,11 @@ p {
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1); }
 .content-title {
   font-family: "Futura";
-  font-size: 10vh;
+  font-size: 8vh;
   line-height: 10vh;
   margin: 0; }
 .content-subtitle {
-  font-size: 6vh;
+  font-size: 5vh;
   line-height: 5vh;
   font-family: "EB Garamond";
   margin: 0 0 2vh 0; }
@@ -97,9 +97,8 @@ p {
 
 .container-navtree {
   position: fixed;
-  right: 1vw;
+  right: -2vw;
   bottom: 0;
-  z-index: 99;
   width: 30%;
   height: 50%;
   background-image: url("../img/branch.png");
@@ -110,12 +109,19 @@ p {
   position: fixed;
   left: 0;
   top: -3vh;
-  z-index: 99;
   width: 50%;
   height: 50%;
   background-image: url("../img/heathlandPattern.png");
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat; }
+
+.branch {
+  width: 420px;
+  height: 420px;
+  z-index: 99;
+  background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
+  animation: play 2s steps(77);
+  -webkit-animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=style.css.map */

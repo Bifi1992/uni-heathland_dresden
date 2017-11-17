@@ -149,22 +149,25 @@ h1, h2, div {
 
 // navtree/ legend
 .container {
+<<<<<<< Updated upstream
+=======
   &-navtree {
     position: fixed;
     right: -2vw;
     bottom: 0;
-    width: 30%;
+    //width: 30%;
     height: 50%;
     background-image: url("../img/branch.png");
     background-size: contain;
     background-position-y: bottom;
     background-repeat: no-repeat;
   }
+>>>>>>> Stashed changes
   &-pattern {
     position: fixed;
     left: 0;
     top: -3vh;
-    width: 50%;
+    //width: 50%;
     height: 50%;
     background-image: url("../img/heathlandPattern.png");
     background-size: contain;
