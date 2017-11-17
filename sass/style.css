@@ -119,9 +119,16 @@ h1, h2, div {
 .branch {
   width: 420px;
   height: 420px;
-  z-index: 99;
   background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
   animation: play 2s steps(77);
-  -webkit-animation-fill-mode: forwards; }
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s; }
+
+@keyframes play {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: -32347px 0px; } }
 
 /*# sourceMappingURL=style.css.map */
