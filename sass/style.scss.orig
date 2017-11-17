@@ -149,22 +149,25 @@ h1, h2, div {
 
 // navtree/ legend
 .container {
+<<<<<<< Updated upstream
+=======
   &-navtree {
     position: fixed;
     right: -2vw;
     bottom: 0;
-    width: 30%;
+    //width: 30%;
     height: 50%;
     background-image: url("../img/branch.png");
     background-size: contain;
     background-position-y: bottom;
     background-repeat: no-repeat;
   }
+>>>>>>> Stashed changes
   &-pattern {
     position: fixed;
     left: 0;
     top: -3vh;
-    width: 50%;
+    //width: 50%;
     height: 50%;
     background-image: url("../img/heathlandPattern.png");
     background-size: contain;
@@ -178,15 +181,8 @@ h1, h2, div {
 .branch {
   width: 420px;
   height: 420px;
+  z-index: 99;
   background: url('http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png') left center;
   animation: play 2.0s steps(77);
   -webkit-animation-fill-mode: forwards;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-}
-
-@keyframes play {
-
-  0% {background-position: 0px 0px;}
-  100% { background-position: -32347px 0px; }
 }
