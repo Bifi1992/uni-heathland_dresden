@@ -100,12 +100,10 @@ p {
   right: 1vw;
   bottom: 0;
   z-index: 99;
-  width: 30%;
+  width: 20%;
   height: 50%;
   background-image: url("../img/branch.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 .container-pattern {
   position: fixed;
   left: 0;
@@ -114,8 +112,6 @@ p {
   width: 50%;
   height: 50%;
   background-image: url("../img/heathlandPattern.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */
