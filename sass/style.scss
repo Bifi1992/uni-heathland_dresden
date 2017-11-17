@@ -149,18 +149,6 @@ p {
 
 // navtree/ legend
 .container {
-  &-navtree {
-    position: fixed;
-    right: 1vw;
-    bottom: 0;
-    z-index: 99;
-    width: 30%;
-    height: 50%;
-    background-image: url("../img/branch.png");
-    background-size: contain;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-  }
   &-pattern {
     position: fixed;
     left: 0;
@@ -175,3 +163,13 @@ p {
   }
 }
 
+// branch animation
+
+.branch {
+  width: 420px;
+  height: 420px;
+  z-index: 99;
+  background: url('http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png') left center;
+  animation: play 2.0s steps(77);
+  -webkit-animation-fill-mode: forwards;
+}
