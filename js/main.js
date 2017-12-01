@@ -89,7 +89,7 @@ function initMap() {
   var brown = '#211812';
   var grey = '#777777';
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
+    zoom: 14,
     center: locCenter,
     styles: [
       {elementType: 'geometry', stylers: [{color: brown}]},

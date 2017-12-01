@@ -97,7 +97,7 @@ section:first-of-type {
 .content {
   &-wrapper {
     height: 100vh;
-    font-family: $garamond;
+    font-family: $futura;
     text-transform: uppercase;
     transform: translateY($content-offset);
     will-change: transform;
@@ -123,7 +123,7 @@ section:first-of-type {
 }
 
 table.lineup {
-  font-family: $garamond;
+  font-family: $futura;
   text-align: center;
   vertical-align: middle;
   border-collapse: separate;
@@ -134,22 +134,27 @@ table.lineup {
     margin: 0;
   }
   tr:nth-child(2) {
+    font-family: $garamond;
     font-size: 4vh;
     margin: 0;
   }
   td {
     border: 1px solid;
     border-radius: 5px;
+    background-color: $ochre;
+    //opacity: 0.7;
+    color: $brown;
   }
   td:hover {
-    background-color: $green3;
+    background-color: $green1;
   }
   button {
+    font-family: $garamond;
     width: 100%;
     background-color: transparent;
     border: none;
     display: block;
-    color: $ochre;
+    color: $brown;
     text-decoration: none;
   }
 }
@@ -159,7 +164,7 @@ table.lineup {
     background-color: $ochre;
   }
   &-header {
-    border-bottom-color: $brown;
+    border-bottom: 2px solid $brown;
     span {
       text-shadow: none;
       color: $brown;
