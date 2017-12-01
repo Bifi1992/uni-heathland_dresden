@@ -4,33 +4,35 @@ html, body {
   color: #D2DA77;
   margin: 0; }
 
-h1, h2, div {
+h1, h2, h3, h4, p, div {
   color: #D2DA77; }
 
 .background {
+  left: 0;
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
   will-change: transform;
   backface-visibility: hidden;
-  height: 130vh;
+  height: 160vh;
   position: fixed;
-  transform: translateY(30vh);
+  transform: translateY(60vh);
   transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1); }
   .background:before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; }
   .background:first-child {
-    transform: translateY(-15vh); }
+    transform: translateY(-30vh); }
     .background:first-child .content-wrapper {
-      transform: translateY(15vh); }
+      transform: translateY(30vh); }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
@@ -48,14 +50,15 @@ h1, h2, div {
 .background:nth-child(5) {
   z-index: 1; }
 
-.content-wrapper {
-  height: 100vh;
+section:first-of-type {
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-flow: column nowrap;
-  color: #fff;
-  font-family: "EB Garamond";
+  flex-flow: column nowrap; }
+
+.content-wrapper {
+  height: 100vh;
+  font-family: "Futura";
   text-transform: uppercase;
   transform: translateY(40vh);
   will-change: transform;
@@ -64,61 +67,127 @@ h1, h2, div {
 .content-title {
   font-family: "Futura";
   font-size: 8vh;
-  line-height: 10vh;
   margin: 0; }
 .content-subtitle {
-  font-size: 5vh;
-  line-height: 5vh;
+  font-size: 6vh;
   font-family: "EB Garamond";
-  margin: 0 0 2vh 0; }
+  margin: 0; }
+.content-text {
+  font-size: 4vh;
+  font-family: "EB Garamond";
+  text-transform: none;
+  margin: 0; }
+
+table.lineup {
+  font-family: "Futura";
+  text-transform: none;
+  font-size: 2vh;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: separate;
+  border-spacing: 10px;
+  table-layout: fixed; }
+  table.lineup tr:first-child {
+    font-size: 6vh;
+    margin: 0; }
+  table.lineup tr:nth-child(2) {
+    font-family: "EB Garamond";
+    text-transform: uppercase;
+    font-size: 4vh;
+    margin: 0; }
+  table.lineup td {
+    border-radius: 2px;
+    background-color: #372d22;
+    color: #D2DA77; }
+  table.lineup td:hover {
+    background-color: #044003; }
+  table.lineup button {
+    font-family: "EB Garamond";
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: block;
+    color: #D2DA77;
+    text-decoration: none; }
+  table.lineup button:focus {
+    outline: none; }
+  table.lineup .emptytd {
+    background-color: transparent; }
+
+.modal-content {
+  background-color: #372d22; }
+.modal-header {
+  border-bottom: 2px solid #211812; }
+  .modal-header span {
+    text-shadow: none;
+    color: #D2DA77; }
+  .modal-header .close {
+    opacity: 1; }
 
 .background.up-scroll {
-  transform: translate3d(0, -15vh, 0); }
+  transform: translate3d(0, -30vh, 0); }
   .background.up-scroll .content-wrapper {
-    transform: translateY(15vh); }
+    transform: translateY(30vh); }
   .background.up-scroll + .background {
-    transform: translate3d(0, 30vh, 0); }
+    transform: translate3d(0, 60vh, 0); }
     .background.up-scroll + .background .content-wrapper {
-      transform: translateY(30vh); }
+      transform: translateY(60vh); }
 
 .background.down-scroll {
-  transform: translate3d(0, -130vh, 0); }
+  transform: translate3d(0, -160vh, 0); }
   .background.down-scroll .content-wrapper {
     transform: translateY(40vh); }
   .background.down-scroll + .background:not(.down-scroll) {
-    transform: translate3d(0, -15vh, 0); }
+    transform: translate3d(0, -30vh, 0); }
     .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
-      transform: translateY(15vh); }
+      transform: translateY(30vh); }
 
-.countdown {
+.countdown-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  zoom: 0.6;
+  -moz-transform: scale(0.6); }
 
 .container-navtree {
   position: fixed;
-  right: -2vw;
+  right: 0;
   bottom: 0;
-  width: 30%;
-  height: 50%;
+  width: 30vw;
+  height: 50vh;
   background-image: url("../img/branch.png");
   background-size: contain;
   background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 7; }
 .container-pattern {
   position: fixed;
   left: 0;
   top: -3vh;
-  width: 50%;
-  height: 50%;
+  width: 50vw;
+  height: 50vh;
   background-image: url("../img/heathlandPattern.png");
   background-size: contain;
   background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 7;
+  pointer-events: none; }
+.container-map {
+  border: 2px #D2DA77;
+  border-radius: 2px; }
+  .container-map-address {
+    margin-bottom: 2vh; }
+
+#map {
+  min-height: 400px;
+  min-width: 400px;
+  border-radius: 2px; }
 
 .branch {
-  width: 420px;
-  height: 420px;
+  width: 300px;
+  height: 300px;
   background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
   animation: play 2s steps(77);
   -webkit-animation-fill-mode: forwards;
