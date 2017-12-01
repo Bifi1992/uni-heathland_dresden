@@ -80,6 +80,8 @@ section:first-of-type {
 
 table.lineup {
   font-family: "Futura";
+  text-transform: none;
+  font-size: 2vh;
   text-align: center;
   vertical-align: middle;
   border-collapse: separate;
@@ -90,31 +92,34 @@ table.lineup {
     margin: 0; }
   table.lineup tr:nth-child(2) {
     font-family: "EB Garamond";
+    text-transform: uppercase;
     font-size: 4vh;
     margin: 0; }
   table.lineup td {
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: #D2DA77;
-    color: #211812; }
+    border-radius: 2px;
+    background-color: #372d22;
+    color: #D2DA77; }
   table.lineup td:hover {
-    background-color: #046003; }
+    background-color: #044003; }
   table.lineup button {
     font-family: "EB Garamond";
+    text-transform: uppercase;
     width: 100%;
     background-color: transparent;
     border: none;
     display: block;
-    color: #211812;
+    color: #D2DA77;
     text-decoration: none; }
+  table.lineup .emptytd {
+    background-color: transparent; }
 
 .modal-content {
-  background-color: #D2DA77; }
+  background-color: #372d22; }
 .modal-header {
   border-bottom: 2px solid #211812; }
   .modal-header span {
     text-shadow: none;
-    color: #211812; }
+    color: #D2DA77; }
   .modal-header .close {
     opacity: 1; }
 
@@ -152,7 +157,8 @@ table.lineup {
   background-image: url("../img/branch.png");
   background-size: contain;
   background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 7; }
 .container-pattern {
   position: fixed;
   left: 0;
@@ -162,15 +168,18 @@ table.lineup {
   background-image: url("../img/heathlandPattern.png");
   background-size: contain;
   background-position-y: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 7; }
 .container-map {
   border: 2px #D2DA77;
-  border-radius: 5px; }
+  border-radius: 2px; }
+  .container-map-address {
+    margin-bottom: 2vh; }
 
 #map {
   min-height: 400px;
   min-width: 400px;
-  border-radius: 5px; }
+  border-radius: 2px; }
 
 .branch {
   width: 300px;

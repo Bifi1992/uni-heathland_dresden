@@ -87,12 +87,13 @@ function initMap() {
   var green3 = '#044003';
   var green4 = '#349752';
   var brown = '#211812';
+  var brown2 = '#372d22';
   var grey = '#777777';
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
     center: locCenter,
     styles: [
-      {elementType: 'geometry', stylers: [{color: brown}]},
+      {elementType: 'geometry', stylers: [{color: brown2}]},
       {elementType: 'labels.text.stroke', stylers: [{color: ochre}]},
       {elementType: 'labels.text.fill', stylers: [{color: grey}]},
       {
