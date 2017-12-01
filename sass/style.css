@@ -105,11 +105,14 @@ table.lineup {
     font-family: "EB Garamond";
     text-transform: uppercase;
     width: 100%;
+    height: 100%;
     background-color: transparent;
     border: none;
     display: block;
     color: #D2DA77;
     text-decoration: none; }
+  table.lineup button:focus {
+    outline: none; }
   table.lineup .emptytd {
     background-color: transparent; }
 
@@ -169,7 +172,8 @@ table.lineup {
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  z-index: 7; }
+  z-index: 7;
+  pointer-events: none; }
 .container-map {
   border: 2px #D2DA77;
   border-radius: 2px; }
