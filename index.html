@@ -30,7 +30,7 @@
           <h2 class="content-title">Line Up</h2>
         </div>
         <div class="p-5 placeholder"></div>
-        <table class="p-2 col-6 justify-content-center align-self-center lineup">
+        <table class="p-2 col-7 justify-content-center align-self-center lineup">
           <tr>
             <td colspan="4">
               <button type="button" data-toggle="modal" data-target=".modal-joe-kerman">Joe Kerman & The Bats</button>
@@ -61,41 +61,38 @@
         <div class="p-4 justify-content-center align-self-end">
           <h2 class="content-title">News</h2>
         </div>
-        <!--Twitter widget-->
-        <a class="twitter-timeline p-2 justify-content-center" href="https://twitter.com/heathlandfolk"
-           data-tweet-limit="5">Tweets by
-          Heathland Dresden</a>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <!— InstaWidget —>
-        <a class="p-2 justify-content-center" href="https://instawidget.net/v/user/heathlanddresden"
-           id="link-7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db">@heathlanddresden</a>
-        <script
-            src="https://instawidget.net/js/instawidget.js?u=7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db&width=300px"></script>
-
-        <div class="d-flex flex-row justify-content-center">
-          <div style="color: #00ff00">TEST</div>
+        <div class="p-5 placeholder"></div>
+        <div class="d-flex flex-row container-twit-inst align-self-center">
+          <!--Twitter widget-->
+          <a class="twitter-timeline" href="https://twitter.com/heathlandfolk" data-tweet-limit="5">Tweets by Heathland
+            Dresden</a>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <!-- InstaWidget -->
+          <a href="https://instawidget.net/v/user/heathlanddresden"
+             id="link-7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db">@heathlanddresden</a>
+          <script
+              src="https://instawidget.net/js/instawidget.js?u=7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db&width=300px"></script>
         </div>
       </div>
     </section>
     <!--Location-->
     <section class="background">
       <div class="d-flex flex-column content-wrapper">
-        <div class="d-flex flex-row justify-content-center">
-          <h2 class="content-title col-4 align-self-end">Location</h2>
+        <div class="p-4 justify-content-center align-self-end">
+          <h2 class="content-title">Location</h2>
         </div>
-        <div class="d-flex flex-row justify-content-center">
-          <div style="color: #00ff00">TEST</div>
+        <div class="p-5 placeholder"></div>
+        <!--Google Map-->
+        <div class="d-flex flex-row container-map align-self-center">
+          <div id="map"></div>
         </div>
       </div>
     </section>
     <!--Contact-->
     <section class="background">
       <div class="d-flex flex-column content-wrapper">
-        <div class="d-flex flex-row justify-content-center">
-          <h2 class="content-title col-4 align-self-end">Contact</h2>
-        </div>
-        <div class="d-flex flex-row justify-content-center">
-          <div style="color: #00ff00">TEST</div>
+        <div class="p-4 justify-content-center align-self-end">
+          <h2 class="content-title">Contact</h2>
         </div>
       </div>
     </section>
@@ -117,11 +114,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 <script src="js/flipclock.min.js"></script>
 <script src="js/main.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2kSpb4DjzeS66cbEhsRPRQ1Up5xJN28&callback=initMap"></script>
 
 <!-- Modal joe kerman-->
 <div class="modal fade modal-joe-kerman" tabindex="-1" role="dialog" aria-labelledby="joeKermanTitle"
      aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-xs" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="joeKermanTitle">Joe Kerman & The Bats</h5>

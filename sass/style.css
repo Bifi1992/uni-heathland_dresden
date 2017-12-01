@@ -105,12 +105,12 @@ table.lineup {
     text-decoration: none; }
 
 .modal-content {
-  background-color: #211812; }
+  background-color: #D2DA77; }
 .modal-header {
-  border-bottom-color: #D2DA77; }
+  border-bottom-color: #211812; }
   .modal-header span {
     text-shadow: none;
-    color: #D2DA77; }
+    color: #211812; }
   .modal-header .close {
     opacity: 1; }
 
@@ -141,7 +141,7 @@ table.lineup {
 
 .container-navtree {
   position: fixed;
-  right: -2vw;
+  right: 0;
   bottom: 0;
   width: 30vw;
   height: 50vh;
@@ -159,10 +159,18 @@ table.lineup {
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat; }
+.container-map {
+  border: 2px #D2DA77;
+  border-radius: 5px; }
+
+#map {
+  min-height: 400px;
+  min-width: 400px;
+  border-radius: 5px; }
 
 .branch {
-  width: 420px;
-  height: 420px;
+  width: 300px;
+  height: 300px;
   background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
   animation: play 2s steps(77);
   -webkit-animation-fill-mode: forwards;
