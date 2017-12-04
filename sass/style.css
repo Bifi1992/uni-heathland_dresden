@@ -191,14 +191,41 @@ table.lineup {
   .container-map-address {
     margin-bottom: 2vh; }
 
+.contact h5 {
+  font-family: "EB Garamond";
+  font-size: 3vh; }
+.contact p {
+  font-family: "Futura";
+  font-size: 2vh;
+  margin: 0; }
+.contact button {
+  width: 100%;
+  padding: 2vh 0;
+  font-size: 4vh;
+  font-family: "EB Garamond";
+  border: none;
+  border-radius: 2px;
+  color: #D2DA77;
+  background-color: #372d22;
+  text-transform: uppercase;
+  margin-top: 2vh; }
+.contact button:hover {
+  background-color: #044003; }
+.contact .addr2 {
+  text-align: right; }
+.contact .disclaimer {
+  font-family: "Futura";
+  font-size: 1vh;
+  font-style: italic; }
+
 #map {
   min-height: 400px;
   min-width: 400px;
   border-radius: 2px; }
 
 .branch {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
   animation: play 2s steps(77);
   -webkit-animation-fill-mode: forwards;
