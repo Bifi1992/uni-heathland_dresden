@@ -8,7 +8,7 @@
 $parallax-offset: 60vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
-$slide-number: 5;
+$slide-number: 8;
 //colors
 $black: #000;
 $ochre: #D2DA77;
@@ -123,6 +123,26 @@ section:first-of-type {
   }
 }
 
+.modal {
+  &-content {
+    background-color: $brown2;
+  }
+  &-header {
+    border-bottom: 2px solid $brown;
+    span {
+      text-shadow: none;
+      color: $ochre;
+    }
+    h5 {
+      margin-top: 2vh;
+    }
+    .close {
+      opacity: 1;
+    }
+  }
+}
+
+//old with table:
 table.lineup {
   font-family: $futura;
   text-transform: none;
@@ -168,22 +188,6 @@ table.lineup {
   }
   .emptytd {
     background-color: transparent;
-  }
-}
-
-.modal {
-  &-content {
-    background-color: $brown2;
-  }
-  &-header {
-    border-bottom: 2px solid $brown;
-    span {
-      text-shadow: none;
-      color: $ochre;
-    }
-    .close {
-      opacity: 1;
-    }
   }
 }
 
@@ -262,6 +266,41 @@ table.lineup {
   }
 }
 
+.contact {
+  h5 {
+    font-family: $garamond;
+    font-size: 3vh;
+  }
+  p {
+    font-family: $futura;
+    font-size: 2vh;
+    margin: 0;
+  }
+  button {
+    width: 100%;
+    padding: 2vh 0;
+    font-size: 4vh;
+    font-family: $garamond;
+    border: none;
+    border-radius: 2px;
+    color: $ochre;
+    background-color: $brown2;
+    text-transform: uppercase;
+    margin-top: 2vh;
+  }
+  button:hover {
+    background-color: $green3;
+  }
+  .addr2 {
+    text-align: right;
+  }
+  .disclaimer {
+    font-family: $futura;
+    font-size: 1vh;
+    font-style: italic;
+  }
+}
+
 // google maps
 #map {
   min-height: 400px;
@@ -271,8 +310,8 @@ table.lineup {
 
 // branch animation
 .branch {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background: url('http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png') left center;
   animation: play 2.0s steps(77);
   -webkit-animation-fill-mode: forwards;

@@ -36,18 +36,27 @@ h1, h2, h3, h4, p, div {
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 5; }
+  z-index: 8; }
 
 .background:nth-child(2) {
-  z-index: 4; }
+  z-index: 7; }
 
 .background:nth-child(3) {
-  z-index: 3; }
+  z-index: 6; }
 
 .background:nth-child(4) {
-  z-index: 2; }
+  z-index: 5; }
 
 .background:nth-child(5) {
+  z-index: 4; }
+
+.background:nth-child(6) {
+  z-index: 3; }
+
+.background:nth-child(7) {
+  z-index: 2; }
+
+.background:nth-child(8) {
   z-index: 1; }
 
 section:first-of-type {
@@ -77,6 +86,18 @@ section:first-of-type {
   font-family: "EB Garamond";
   text-transform: none;
   margin: 0; }
+
+.modal-content {
+  background-color: #372d22; }
+.modal-header {
+  border-bottom: 2px solid #211812; }
+  .modal-header span {
+    text-shadow: none;
+    color: #D2DA77; }
+  .modal-header h5 {
+    margin-top: 2vh; }
+  .modal-header .close {
+    opacity: 1; }
 
 table.lineup {
   font-family: "Futura";
@@ -116,16 +137,6 @@ table.lineup {
   table.lineup .emptytd {
     background-color: transparent; }
 
-.modal-content {
-  background-color: #372d22; }
-.modal-header {
-  border-bottom: 2px solid #211812; }
-  .modal-header span {
-    text-shadow: none;
-    color: #D2DA77; }
-  .modal-header .close {
-    opacity: 1; }
-
 .background.up-scroll {
   transform: translate3d(0, -30vh, 0); }
   .background.up-scroll .content-wrapper {
@@ -161,7 +172,7 @@ table.lineup {
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  z-index: 7; }
+  z-index: 10; }
 .container-pattern {
   position: fixed;
   left: 0;
@@ -172,7 +183,7 @@ table.lineup {
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  z-index: 7;
+  z-index: 10;
   pointer-events: none; }
 .container-map {
   border: 2px #D2DA77;
@@ -180,14 +191,41 @@ table.lineup {
   .container-map-address {
     margin-bottom: 2vh; }
 
+.contact h5 {
+  font-family: "EB Garamond";
+  font-size: 3vh; }
+.contact p {
+  font-family: "Futura";
+  font-size: 2vh;
+  margin: 0; }
+.contact button {
+  width: 100%;
+  padding: 2vh 0;
+  font-size: 4vh;
+  font-family: "EB Garamond";
+  border: none;
+  border-radius: 2px;
+  color: #D2DA77;
+  background-color: #372d22;
+  text-transform: uppercase;
+  margin-top: 2vh; }
+.contact button:hover {
+  background-color: #044003; }
+.contact .addr2 {
+  text-align: right; }
+.contact .disclaimer {
+  font-family: "Futura";
+  font-size: 1vh;
+  font-style: italic; }
+
 #map {
   min-height: 400px;
   min-width: 400px;
   border-radius: 2px; }
 
 .branch {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background: url("http://changeofpace.de/wp-content/uploads/2017/11/BranchSheet.png") left center;
   animation: play 2s steps(77);
   -webkit-animation-fill-mode: forwards;
