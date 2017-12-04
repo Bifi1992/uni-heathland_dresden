@@ -6,7 +6,10 @@
   <div class="d-flex flex-row container-twit-inst align-self-center">
     <!--Twitter widget-->
       <div class="twitterDiv">
-    <a class="twitter-timeline" href="https://twitter.com/heathlandfolk" data-tweet-limit="2">Tweets by Heathland
+    <a class="twitter-timeline" href="https://twitter.com/heathlandfolk"
+       data-tweet-limit="3"
+       data-chrome="nofooter"
+       data-theme="dark">Tweets by Heathland
       Dresden</a>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
