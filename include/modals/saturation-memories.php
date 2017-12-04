@@ -11,12 +11,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Gibt es so etwas wie Folk Punk? Ja? Sicher? Ganz sicher! Zumindest kann man The Saturation of Memories kaum anders beschreiben als  Clash trifft auf Cash!
           </div>
         </div>
       </div>
