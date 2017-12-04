@@ -43,4 +43,11 @@
 <?php require "include/modals/joe-kerman.php"; ?>
 <?php require "include/modals/laura-mcneal.php"; ?>
 <?php require "include/modals/foxmask.php"; ?>
+<?php require "include/modals/sevenwaters.php"; ?>
+<?php require "include/modals/ageless-river.php"; ?>
+<?php require "include/modals/endless-circle.php"; ?>
+<?php require "include/modals/pendulum.php"; ?>
+<?php require "include/modals/saturation-memories.php"; ?>
+<?php require "include/modals/seventy-three-keys.php"; ?>
+<?php require "include/modals/sgt-peppers.php"; ?>
 </body>

@@ -8,7 +8,7 @@
 $parallax-offset: 60vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
-$slide-number: 5;
+$slide-number: 8;
 //colors
 $black: #000;
 $ochre: #D2DA77;
@@ -123,6 +123,26 @@ section:first-of-type {
   }
 }
 
+.modal {
+  &-content {
+    background-color: $brown2;
+  }
+  &-header {
+    border-bottom: 2px solid $brown;
+    span {
+      text-shadow: none;
+      color: $ochre;
+    }
+    h5 {
+      margin-top: 2vh;
+    }
+    .close {
+      opacity: 1;
+    }
+  }
+}
+
+//old with table:
 table.lineup {
   font-family: $futura;
   text-transform: none;
@@ -168,22 +188,6 @@ table.lineup {
   }
   .emptytd {
     background-color: transparent;
-  }
-}
-
-.modal {
-  &-content {
-    background-color: $brown2;
-  }
-  &-header {
-    border-bottom: 2px solid $brown;
-    span {
-      text-shadow: none;
-      color: $ochre;
-    }
-    .close {
-      opacity: 1;
-    }
   }
 }
 

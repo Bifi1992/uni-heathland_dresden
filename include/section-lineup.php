@@ -18,16 +18,31 @@
       </td>
     </tr>
     <tr>
-      <td colspan="2">Seventy-Three Keys</td>
-      <td colspan="2">The Sgt. Peppers</td>
-      <td colspan="2">Endless Circle</td>
-      <td colspan="2">Sevenwaters</td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-seventy-three">Seventy-Three Keys</button>
+      </td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-sgt-peppers">The Sgt. Peppers</button>
+      </td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-endless-circle">Endless Circle</button>
+      </td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-sevenwaters">Sevenwaters</button>
+      </td>
     </tr>
     <tr>
       <td class="emptytd"></td>
-      <td colspan="2">Ageless River</td>
-      <td colspan="2">Pendulum</td>
-      <td colspan="2">The Saturation of Memories</td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-ageless-river">Ageless River</button>
+      </td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-pendulum">Pendulum</button>
+      </td>
+      <td colspan="2">
+        <button type="button" data-toggle="modal" data-target=".modal-saturation-memories">The Saturation of Memories
+        </button>
+      </td>
       <td class="emptytd"></td>
     </tr>
   </table>
