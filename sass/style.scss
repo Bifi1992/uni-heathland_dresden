@@ -110,6 +110,11 @@ section:first-of-type {
     font-size: 8vh;
     margin: 5px 100px 0 0;
   }
+  &-headtitle{
+    font-family: $futura;
+    font-size: 8vh;
+    margin: 0;
+  }
   &-subtitle {
     font-size: 6vh;
     font-family: $garamond;
