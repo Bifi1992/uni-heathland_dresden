@@ -517,6 +517,16 @@ nav {
       height: 100%;
     }
   }
+  nav {
+    #menu {
+      width: 50vw;
+      opacity: 1;
+      margin: -100px 0 0 -40vw;
+      li {
+        font-size: 3em;
+      }
+    }
+  }
 }
 
 @media(min-width: 993px) {
