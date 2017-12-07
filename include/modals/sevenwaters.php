@@ -12,7 +12,7 @@
         <div class="container-fluid">
           <div class="row">
               Sevenwaters sind oldschool! Alternative Blues der so retro klingt ist einfach cool.
-              Man hat die ganze Zeit das Gefühl eine Vinyl LP zu hören!
+              Man hat die ganze Zeit das Gefühl, eine Vinyl LP zu hören!
           </div>
         </div>
       </div>

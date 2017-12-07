@@ -37,7 +37,7 @@
         <button type="button" data-toggle="modal" data-target=".modal-ageless-river">Ageless River</button>
       </td>
       <td colspan="2">
-        <button type="button" data-toggle="modal" data-target=".modal-pendulum">Pendulum</button>
+        <button type="button" data-toggle="modal" data-target=".modal-pendulum">Fey FX</button>
       </td>
       <td colspan="2">
         <button type="button" data-toggle="modal" data-target=".modal-saturation-memories">The Saturation of Memories
