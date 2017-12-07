@@ -11,12 +11,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Pendulum lassen sich nur schwer in eine Schublade stecken. Versuchen wir es dennoch einmal: Ruhiger, stimmungsvoller Pop trifft auf atmosphärischen Rock gewürzt mit Singer- Songwriter Elementen.
           </div>
         </div>
       </div>

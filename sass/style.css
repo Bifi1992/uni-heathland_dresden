@@ -181,7 +181,7 @@ table.lineup {
   height: 50vh;
   background-image: url("../img/heathlandPattern.png");
   background-size: contain;
-  background-position-y: bottom;
+  background-position-y: top;
   background-repeat: no-repeat;
   z-index: 10;
   pointer-events: none; }
@@ -237,5 +237,10 @@ table.lineup {
     background-position: 0px 0px; }
   100% {
     background-position: -32347px 0px; } }
+.twitterDiv {
+  margin-right: 5%; }
+
+.modalImg {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

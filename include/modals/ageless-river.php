@@ -11,12 +11,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Synthesizer und Electro? Folk und Rock? Können sich Ageless River vielleicht mal für ein Genre entscheiden? Nein! Genau aus diesem Grund ist diese Band so einzigartig.
           </div>
         </div>
       </div>
