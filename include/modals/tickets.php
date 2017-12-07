@@ -11,7 +11,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            Der Ticketverkauf startet am 01.12.2018 um 12.00 Uhr.<br>Wir freuen uns auf euch.
+            Der Ticketverkauf startet am 01.01.2018 um 12.00 Uhr.<br>Wir freuen uns auf euch.
           </div>
         </div>
       </div>
