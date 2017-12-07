@@ -76,7 +76,7 @@ section:first-of-type {
 .content-title {
   font-family: "Futura";
   font-size: 8vh;
-  margin: 0; }
+  margin: 5px 100px 0 0; }
 .content-subtitle {
   font-size: 6vh;
   font-family: "EB Garamond";
@@ -246,5 +246,105 @@ table.lineup {
 
 .modalImg {
   width: 100%; }
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  /*
+   * Just a quick hamburger
+   */
+  /*
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  /*
+   * But let's hide the middle one.
+   */
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  /*
+   * And let's slide it in from the left
+   */ }
+  nav a {
+    text-decoration: none;
+    color: #D2DA77;
+    transition: color 0.3s ease; }
+  nav a:hover {
+    color: #372d22; }
+  nav #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    z-index: 11;
+    -webkit-user-select: none;
+    user-select: none; }
+  nav #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 12;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  nav #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #D2DA77;
+    border-radius: 3px;
+    z-index: 11;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  nav #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  nav #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  nav #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #D2DA77; }
+  nav #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  nav #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  nav #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -100px;
+    padding: 50px;
+    padding-top: 125px;
+    border-radius: 1px;
+    opacity: 0.8;
+    height: 110vh;
+    background: #372d22;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  nav #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: "Futura";
+    text-transform: uppercase; }
+  nav #menuToggle input:checked ~ ul {
+    transform: none; }
 
 /*# sourceMappingURL=style.css.map */

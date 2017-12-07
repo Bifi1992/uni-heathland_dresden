@@ -36,6 +36,21 @@
     </div>
     <div class="container-navtree branch">
     </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Line Up</li></a>
+          <a href="#"><li>News</li></a>
+          <a href="#"><li>Location</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
   </div>
 </main>
 <?php require "include/scripts.php"; ?>
