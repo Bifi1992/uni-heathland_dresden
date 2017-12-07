@@ -18,15 +18,13 @@ function parallaxScroll(evt) {
     //Set delta for IE
     delta = -evt.deltaY;
   } else if (isMobile) {
-    console.log("mobile");
-
+    // don't adjust delta
   } else {
     //Set delta for all other browsers
     delta = evt.wheelDelta;
   }
 
   if (ticking != true) {
-    console.log("delta " + delta);
     if (delta <= -scrollSensitivitySetting) {
       //Down scroll
       ticking = true;
