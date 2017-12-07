@@ -13,23 +13,23 @@
 <main>
   <div class="container">
     <!--Home-->
-    <section class="background">
+    <section class="background up-scroll">
       <?php require "include/section-home.php"; ?>
     </section>
     <!--Line Up-->
-    <section class="background">
+    <section class="background up-scroll">
       <?php require "include/section-lineup.php"; ?>
     </section>
     <!--News-->
-    <section class="background">
+    <section class="background up-scroll">
       <?php require "include/section-news.php"; ?>
     </section>
     <!--Location-->
-    <section class="background">
+    <section class="background up-scroll">
       <?php require "include/section-location.php"; ?>
     </section>
     <!--Contact-->
-    <section class="background">
+    <section class="background up-scroll">
       <?php require "include/section-contact.php"; ?>
     </section>
     <div class="container-pattern col-6 align-self-start">

@@ -155,12 +155,18 @@ table.lineup {
   tr:first-child {
     font-size: 6vh;
     margin: 0;
+    button {
+      font-family: $garamond;
+    }
   }
   tr:nth-child(2) {
     font-family: $garamond;
     text-transform: uppercase;
     font-size: 4vh;
     margin: 0;
+    button {
+      font-family: $garamond;
+    }
   }
   td {
     //border: 1px solid;
@@ -173,7 +179,7 @@ table.lineup {
     background-color: $green3;
   }
   button {
-    font-family: $garamond;
+    font-family: $futura;
     text-transform: uppercase;
     width: 100%;
     height: 100%;
