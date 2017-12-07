@@ -11,18 +11,18 @@ var menuItems = $(".menu-li");
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(evt) {
-  if (isFirefox) {
-    //Set delta for Firefox
-    delta = evt.detail * (-120);
-  } else if (isIe) {
-    //Set delta for IE
-    delta = -evt.deltaY;
-  } else if (isMobile) {
-    // don't adjust delta
-  } else {
-    //Set delta for all other browsers
-    delta = evt.wheelDelta;
+  if (!isMobile){
+    if (isFirefox) {
+      //Set delta for Firefox
+      delta = evt.detail * (-120);
+    } else if (isIe) {
+      //Set delta for IE
+      delta = -evt.deltaY;
+    } else {
+      //Set delta for all other browsers
+      delta = evt.wheelDelta;
   }
+}
 
   if (ticking != true) {
     if (delta <= -scrollSensitivitySetting) {
