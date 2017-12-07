@@ -11,7 +11,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-              Moderner Groove trifft auf oldschool Folk. Seventy-Three Keys intensiver Genremix erinnert an eine Symbiose aus Massiv Attack und Neil Young.
+              Moderner Groove trifft auf oldschool Folk. Seventy-Three Keys intensiver Genremix erinnert an eine Symbiose aus Massive Attack und Neil Young.
           </div>
         </div>
       </div>
