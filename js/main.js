@@ -6,6 +6,7 @@ var scrollSensitivitySetting = 60; //Increase/decrease this number to change sen
 var slideDurationSetting = 1000; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
+var menuItems = $(".menu-li");
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(evt) {
@@ -25,7 +26,6 @@ function parallaxScroll(evt) {
       //Down scroll
       ticking = true;
       if (currentSlideNumber !== totalSlideNumber - 1) {
-        currentSlideNumber++;
         nextItem();
       }
       slideDurationTimeout(slideDurationSetting);
@@ -33,9 +33,6 @@ function parallaxScroll(evt) {
     if (delta >= scrollSensitivitySetting) {
       //Up scroll
       ticking = true;
-      if (currentSlideNumber !== 0) {
-        currentSlideNumber--;
-      }
       previousItem();
       slideDurationTimeout(slideDurationSetting);
     }
@@ -55,14 +52,38 @@ window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 
 // ------------- SLIDE MOTION ------------- //
 function nextItem() {
+  if (currentSlideNumber !== totalSlideNumber - 1) {
+    currentSlideNumber++;
+  }
   var $previousSlide = $(".background").eq(currentSlideNumber - 1);
   $previousSlide.removeClass("up-scroll").addClass("down-scroll");
 }
 
 function previousItem() {
+  if (currentSlideNumber !== 0) {
+    currentSlideNumber--;
+  }
   var $currentSlide = $(".background").eq(currentSlideNumber);
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
 }
+
+// slide by menu
+// add event listener to list items
+$('nav').on('click', '.menu-li', scrollToSlide);
+
+function scrollToSlide() {
+  var clickedSlideNumber = $(this).index();
+  if (clickedSlideNumber == currentSlideNumber) {
+    return;
+  }
+  while (clickedSlideNumber > currentSlideNumber) {
+    nextItem();
+  }
+  while (clickedSlideNumber < currentSlideNumber) {
+    previousItem();
+  }
+}
+
 // display countdown timer
 var displayCountdown = function () {
   // time until 12th May 2018
@@ -79,6 +100,7 @@ var displayCountdown = function () {
 };
 displayCountdown();
 
+// google map
 function initMap() {
   var locCenter = {lat: 51.113199, lng: 13.829506};
   var ochre = '#D2DA77';

@@ -176,7 +176,8 @@ table.lineup {
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  z-index: 10; }
+  z-index: 10;
+  pointer-events: none; }
 .container-pattern {
   position: fixed;
   left: 0;
@@ -277,7 +278,8 @@ nav {
     color: #D2DA77;
     transition: color 0.3s ease; }
   nav a:hover {
-    color: #372d22; }
+    color: #372d22;
+    transition: color 0.3s ease; }
   nav #menuToggle {
     display: block;
     position: relative;
@@ -343,7 +345,9 @@ nav {
     padding: 10px 0;
     font-size: 22px;
     font-family: "Futura";
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #D2DA77;
+    cursor: pointer; }
   nav #menuToggle input:checked ~ ul {
     transform: none; }
 

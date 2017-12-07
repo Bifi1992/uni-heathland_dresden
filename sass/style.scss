@@ -247,6 +247,7 @@ table.lineup {
     background-position-y: bottom;
     background-repeat: no-repeat;
     z-index: $slide-number + 2;
+    pointer-events: none;
   }
   &-pattern {
     position: fixed;
@@ -353,6 +354,7 @@ nav {
 
   a:hover {
     color: $brown2;
+    transition: color 0.3s ease;
   }
 
   #menuToggle {
@@ -468,6 +470,8 @@ nav {
     font-size: 22px;
     font-family: $futura;
     text-transform: uppercase;
+    color: $ochre;
+    cursor: pointer;
   }
 
   /*

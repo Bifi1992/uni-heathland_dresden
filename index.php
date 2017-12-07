@@ -43,11 +43,11 @@
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Line Up</li></a>
-          <a href="#"><li>News</li></a>
-          <a href="#"><li>Location</li></a>
-          <a href="#"><li>Contact</li></a>
+          <li class="menu-li">Home</li>
+          <li class="menu-li">Line Up</li>
+          <li class="menu-li">News</li>
+          <li class="menu-li">Location</li>
+          <li class="menu-li">Contact</li>
         </ul>
       </div>
     </nav>
