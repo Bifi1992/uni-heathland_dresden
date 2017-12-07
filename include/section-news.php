@@ -3,9 +3,9 @@
     <h2 class="content-title">News</h2>
   </div>
   <div class="p-5 placeholder"></div>
-  <div class="d-flex flex-row container-twit-inst align-self-center">
+  <div class="d-flex row container-twit-inst align-self-center">
     <!--Twitter widget-->
-    <div class="twitterDiv">
+    <div class="twitterDiv col col-sm-12 col-lg-6">
       <a class="twitter-timeline" href="https://twitter.com/heathlandfolk"
          data-tweet-limit="3"
          data-chrome="nofooter"
@@ -14,12 +14,12 @@
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
-    <div class="instagramDiv">
+    <div class="instagramDiv col col-sm-12 col-lg-6">
         <!-- InstaWidget -->
         <a href="https://instawidget.net/v/user/heathlanddresden"
            id="link-7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db">@heathlanddresden</a>
         <script
-                src="https://instawidget.net/js/instawidget.js?u=7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db&width=300px"></script>
+                src="https://instawidget.net/js/instawidget.js?u=7697f5ea3edec7f7851fb5291d97614951635f34ee1634b770a11a91e8f632db&width=100%"></script>
     </div>
 
   </div>

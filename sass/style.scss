@@ -107,21 +107,21 @@ section:first-of-type {
   }
   &-title {
     font-family: $futura;
-    font-size: 8vh;
+    font-size: 4em;
     margin: 5px 100px 0 0;
   }
-  &-headtitle{
+  &-headtitle {
     font-family: $futura;
-    font-size: 8vh;
+    font-size: 4em;
     margin: 0;
   }
   &-subtitle {
-    font-size: 6vh;
+    font-size: 3em;
     font-family: $garamond;
     margin: 0;
   }
   &-text {
-    font-size: 4vh;
+    font-size: 2em;
     font-family: $garamond;
     text-transform: none;
     margin: 0;
@@ -151,14 +151,14 @@ section:first-of-type {
 table.lineup {
   font-family: $futura;
   text-transform: none;
-  font-size: 2vh;
+  font-size: 1em;
   text-align: center;
   vertical-align: middle;
   border-collapse: separate;
   border-spacing: 10px;
   table-layout: fixed;
   tr:first-child {
-    font-size: 6vh;
+    font-size: 3em;
     margin: 0;
     button {
       font-family: $garamond;
@@ -167,7 +167,7 @@ table.lineup {
   tr:nth-child(2) {
     font-family: $garamond;
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 2em;
     margin: 0;
     button {
       font-family: $garamond;
@@ -279,17 +279,17 @@ table.lineup {
 .contact {
   h5 {
     font-family: $garamond;
-    font-size: 3vh;
+    font-size: 1.5em;
   }
   p {
     font-family: $futura;
-    font-size: 2vh;
+    font-size: 1em;
     margin: 0;
   }
   button {
     width: 100%;
     padding: 2vh 0;
-    font-size: 4vh;
+    font-size: 2em;
     font-family: $garamond;
     border: none;
     border-radius: 2px;
@@ -306,7 +306,7 @@ table.lineup {
   }
   .disclaimer {
     font-family: $futura;
-    font-size: 1vh;
+    font-size: 0.5em;
     font-style: italic;
   }
 }
@@ -338,9 +338,7 @@ table.lineup {
   }
 }
 
-.twitterDiv {
-  margin-right: 5%;
-}
+
 .modalImg {
   width: 100%;
 }
@@ -487,11 +485,33 @@ nav {
   }
 }
 
+@media(max-width: 992px) {
 
-@media(max-width:992px){
-
-  .smallFontButton{
-    font-size: 0.5em;
+  .smallFontButton {
+    font-size: 1.5em;
   }
+  .bigRow {
+    display: none;
+  }
+  .modal {
+    font-size: 2.5em;
+    h5 {
+      font-size: 1.5em;
+    }
+    span {
+      font-size: 2em;
+    }
+    iframe {
+      height: 76px;
+    }
+  }
+  .instagramDiv {
+    margin-top: 6vh;
+  }
+}
 
+@media(min-width: 993px) {
+  .smallRow {
+    display: none;
+  }
 }

@@ -75,14 +75,18 @@ section:first-of-type {
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1); }
 .content-title {
   font-family: "Futura";
-  font-size: 8vh;
+  font-size: 4em;
   margin: 5px 100px 0 0; }
+.content-headtitle {
+  font-family: "Futura";
+  font-size: 4em;
+  margin: 0; }
 .content-subtitle {
-  font-size: 6vh;
+  font-size: 3em;
   font-family: "EB Garamond";
   margin: 0; }
 .content-text {
-  font-size: 4vh;
+  font-size: 2em;
   font-family: "EB Garamond";
   text-transform: none;
   margin: 0; }
@@ -102,21 +106,21 @@ section:first-of-type {
 table.lineup {
   font-family: "Futura";
   text-transform: none;
-  font-size: 2vh;
+  font-size: 1em;
   text-align: center;
   vertical-align: middle;
   border-collapse: separate;
   border-spacing: 10px;
   table-layout: fixed; }
   table.lineup tr:first-child {
-    font-size: 6vh;
+    font-size: 3em;
     margin: 0; }
     table.lineup tr:first-child button {
       font-family: "EB Garamond"; }
   table.lineup tr:nth-child(2) {
     font-family: "EB Garamond";
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 2em;
     margin: 0; }
     table.lineup tr:nth-child(2) button {
       font-family: "EB Garamond"; }
@@ -198,15 +202,15 @@ table.lineup {
 
 .contact h5 {
   font-family: "EB Garamond";
-  font-size: 3vh; }
+  font-size: 1.5em; }
 .contact p {
   font-family: "Futura";
-  font-size: 2vh;
+  font-size: 1em;
   margin: 0; }
 .contact button {
   width: 100%;
   padding: 2vh 0;
-  font-size: 4vh;
+  font-size: 2em;
   font-family: "EB Garamond";
   border: none;
   border-radius: 2px;
@@ -220,7 +224,7 @@ table.lineup {
   text-align: right; }
 .contact .disclaimer {
   font-family: "Futura";
-  font-size: 1vh;
+  font-size: 0.5em;
   font-style: italic; }
 
 #map {
@@ -242,9 +246,6 @@ table.lineup {
     background-position: 0px 0px; }
   100% {
     background-position: -32347px 0px; } }
-.twitterDiv {
-  margin-right: 5%; }
-
 .modalImg {
   width: 100%; }
 
@@ -350,5 +351,27 @@ nav {
     cursor: pointer; }
   nav #menuToggle input:checked ~ ul {
     transform: none; }
+
+@media (max-width: 992px) {
+  .smallFontButton {
+    font-size: 1.5em; }
+
+  .bigRow {
+    display: none; }
+
+  .modal {
+    font-size: 2.5em; }
+    .modal h5 {
+      font-size: 1.5em; }
+    .modal span {
+      font-size: 2em; }
+    .modal iframe {
+      height: 76px; }
+
+  .instagramDiv {
+    margin-top: 6vh; } }
+@media (min-width: 993px) {
+  .smallRow {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

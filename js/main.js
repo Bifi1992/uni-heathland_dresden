@@ -2,6 +2,7 @@
 var ticking = false;
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
+var isMobile = false;
 var scrollSensitivitySetting = 60; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
 var slideDurationSetting = 1000; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
@@ -16,12 +17,16 @@ function parallaxScroll(evt) {
   } else if (isIe) {
     //Set delta for IE
     delta = -evt.deltaY;
+  } else if (isMobile) {
+    console.log("mobile");
+
   } else {
     //Set delta for all other browsers
     delta = evt.wheelDelta;
   }
 
   if (ticking != true) {
+    console.log("delta " + delta);
     if (delta <= -scrollSensitivitySetting) {
       //Down scroll
       ticking = true;
@@ -49,6 +54,52 @@ function slideDurationTimeout(slideDuration) {
 // ------------- ADD EVENT LISTENER ------------- //
 var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
 window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
+// for swipe
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
+function handleTouchStart(evt) {
+  isMobile = true;
+  xDown = evt.touches[0].clientX;
+  yDown = evt.touches[0].clientY;
+};
+
+function handleTouchMove(evt) {
+  if ( !xDown || !yDown ) {
+    return;
+  }
+
+  var xUp = evt.touches[0].clientX;
+  var yUp = evt.touches[0].clientY;
+
+  var xDiff = xDown - xUp;
+  var yDiff = yDown - yUp;
+
+  if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+    if ( xDiff > 0 ) {
+      /* left swipe */
+    } else {
+      /* right swipe */
+    }
+  } else {
+    if ( yDiff > 0 ) {
+      /* up swipe */
+      delta = -60;
+      parallaxScroll();
+    } else {
+      /* down swipe */
+      delta = 60;
+      parallaxScroll();
+    }
+  }
+  /* reset values */
+  xDown = null;
+  yDown = null;
+  delta = 0;
+};
 
 // ------------- SLIDE MOTION ------------- //
 function nextItem() {
