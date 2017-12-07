@@ -5,7 +5,7 @@
   <div class="p-5 placeholder"></div>
 
 
-  <table class="p-2 col-7 justify-content-center align-self-center lineup">
+  <table class="p-2 col-sm-9 col-lg-7 justify-content-center align-self-center lineup">
   <tr>
     <td colspan="8">
       <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-joe-kerman">Joe Kerman &&nbsp;The
@@ -62,46 +62,46 @@
   <!--for small viewport-->
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-seventy-three">Seventy-Three
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-seventy-three">Seventy-Three
         Keys
       </button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-sgt-peppers">The Sgt.
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-sgt-peppers">The Sgt.
         Peppers
       </button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-endless-circle">Endless
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-endless-circle">Endless
         Circle
       </button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-sevenwaters">Sevenwaters
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-sevenwaters">Sevenwaters
       </button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-ageless-river">Ageless
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-ageless-river">Ageless
         River
       </button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-pendulum">Fey FX</button>
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-pendulum">Fey FX</button>
     </td>
   </tr>
   <tr class="smallRow">
     <td colspan="8">
-      <button type="button" class="smallFontButton" data-toggle="modal" data-target=".modal-saturation-memories">The
+      <button type="button" class="smallFontButtonSmallRow" data-toggle="modal" data-target=".modal-saturation-memories">The
         Saturation of Memories
       </button>
     </td>

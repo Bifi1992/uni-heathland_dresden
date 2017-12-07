@@ -488,7 +488,7 @@ nav {
 @media(max-width: 992px) {
 
   .smallFontButton {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .bigRow {
     display: none;
@@ -507,6 +507,16 @@ nav {
   }
   .instagramDiv {
     margin-top: 6vh;
+  }
+  .contactCol{
+    margin-top: 5vh;
+    font-size: 2em;
+  }
+  .fontSizeButton{
+    font-size: 2em;
+  }
+  .smallFontButtonSmallRow{
+    font-size: 3em;
   }
 
   .container-map {
@@ -534,3 +544,9 @@ nav {
     display: none;
   }
 }
+
+.alignCenter{
+  text-align: center;
+}
+
+
