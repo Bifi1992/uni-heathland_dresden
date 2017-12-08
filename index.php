@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Heathland Dresden</title>
+
   <meta charset="utf-8">
+
+    <meta property="og:url"                content="http://heathland.fateyedive-records.de" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Heathland Dresden" />
+    <meta property="og:description"        content="Heathland Dresden Folk Festival" />
+    <meta property="og:image"              content="http://heathland.fateyedive-records.de/img/heathland_og.jpg" />
+    <title>Heathland Dresden</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" title="Favicon"/>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="sass/style.css" rel="stylesheet">
