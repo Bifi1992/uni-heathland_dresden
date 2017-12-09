@@ -254,6 +254,16 @@ table.lineup {
     z-index: $slide-number + 2;
     pointer-events: none;
   }
+  &-social {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 3vw;
+    z-index: $slide-number + 2;
+    img {
+      padding: 0 0 10% 20%;
+    }
+  }
   &-pattern {
     position: fixed;
     left: 0;
@@ -535,6 +545,16 @@ nav {
       li {
         font-size: 3em;
       }
+    }
+  }
+  .container-social {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 10vw;
+    z-index: $slide-number + 2;
+    img {
+      padding: 0 0 10% 20%;
     }
   }
 }
