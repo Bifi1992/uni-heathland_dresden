@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 237 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-145.636,-7758.92)">
+        <g id="facebook-logo-button" transform="matrix(0.461368,0,0,0.461368,263.746,7877.03)">
+            <g transform="matrix(1,0,0,1,-256,-256)">
+                <path d="M256,0C114.842,0 0,114.842 0,256C0,397.148 114.842,512 256,512C397.148,512 512,397.148 512,256C512,114.842 397.168,0 256,0ZM319.665,265.012L278.016,265.012C278.016,331.554 278.016,413.461 278.016,413.461L216.3,413.461C216.3,413.461 216.3,332.348 216.3,265.012L186.963,265.012L186.963,212.546L216.3,212.546L216.3,178.61C216.3,154.305 227.849,116.327 278.583,116.327L324.315,116.502L324.315,167.432C324.315,167.432 296.525,167.432 291.122,167.432C285.719,167.432 278.036,170.134 278.036,181.724L278.036,212.557L325.058,212.557L319.665,265.012Z" style="fill:rgb(4,107,3);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>
