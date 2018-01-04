@@ -11,7 +11,10 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            Der Ticketverkauf startet am 01.01.2018 um 12.00 Uhr.<br>Wir freuen uns auf euch.
+
+            Der Ticketverkauf startet am <?php  $date = date("d.m.Y");
+              echo date("d.m.Y", strtotime($date. '+ 1 day'));
+              ?> um 12.00 Uhr.<br>Wir freuen uns auf euch.
           </div>
         </div>
       </div>
